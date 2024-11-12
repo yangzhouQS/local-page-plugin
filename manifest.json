@@ -7,6 +7,11 @@
     "http://*/*",
     "https://*/*"
   ],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "alarms"
+  ],
   "action": {
     "default_popup": "index.html"
   },
@@ -30,8 +35,14 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": [ "icons/*.png"],
-      "matches": []
+      "resources": [
+        "assets/*",
+        "js/*",
+        "icons/*.png"
+      ],
+      "matches": ["http://*/*",
+        "https://*/*"],
+      "use_dynamic_url": true
     }
   ]
 }
