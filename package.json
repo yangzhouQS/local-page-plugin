@@ -1,0 +1,26 @@
+{
+  "name": "local-page-plugin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "lodash": "^4.17.21",
+    "@crxjs/vite-plugin": "^1.0.14",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^22.9.0",
+    "@vitejs/plugin-vue": "^5.1.5",
+    "@vitejs/plugin-vue-jsx": "^4.1.0",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11",
+    "vue-tsc": "^2.1.10"
+  }
+}
