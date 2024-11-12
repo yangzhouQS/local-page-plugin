@@ -9,9 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@crxjs/vite-plugin": "^1.0.14",
+    "@element-plus/icons-vue": "^2.3.1",
+    "element-plus": "^2.8.7",
     "jquery": "^3.7.1",
     "lodash": "^4.17.21",
-    "@crxjs/vite-plugin": "^1.0.14",
     "vue": "^3.5.12"
   },
   "devDependencies": {
