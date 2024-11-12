@@ -1,14 +1,33 @@
 {
   "manifest_version": 3,
+  "description": "本地浏览器使用插件",
   "name": "local-page-plugin",
   "version": "1.0.0",
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
   "action": {
     "default_popup": "index.html"
   },
   "background": {
-    "service_worker": "src/background.ts",
+    "service_worker": "src/background/background.ts",
     "type": "module"
   },
+  "content_scripts": [
+    {
+      "js": [
+        "src/content/content.ts"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "all_frames": false,
+      "run_at": "document_start",
+      "match_about_blank": true
+    }
+  ],
   "web_accessible_resources": [
     {
       "resources": [ "icons/*.png"],
